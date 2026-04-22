@@ -1,0 +1,13 @@
+.DS_Store
+.env
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+node_modules/
+dist/
+.vite/
+__pycache__/
+*.pyc
+.venv/
+
