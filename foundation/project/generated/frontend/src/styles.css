@@ -1,0 +1,173 @@
+:root {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: #122433;
+  background:
+    radial-gradient(circle at top, rgba(249, 202, 153, 0.65), transparent 28%),
+    linear-gradient(180deg, #f3eee6 0%, #dfe7ec 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: #0f4d5c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.card {
+  width: min(100%, 920px);
+  background: rgba(255, 252, 247, 0.88);
+  border: 1px solid rgba(18, 36, 51, 0.08);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 24px 60px rgba(18, 36, 51, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.auth-card {
+  width: min(100%, 440px);
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
+  color: #8c5b34;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  line-height: 1;
+}
+
+.lead,
+.meta {
+  color: #4b5f6f;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 14px;
+  border: 1px solid rgba(18, 36, 51, 0.15);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+button,
+.ghost-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.85rem 1.2rem;
+  background: #122433;
+  color: #fff9f1;
+}
+
+.ghost-button {
+  background: transparent;
+  color: #122433;
+  border: 1px solid rgba(18, 36, 51, 0.2);
+}
+
+.error {
+  color: #a6342c;
+  font-weight: 600;
+}
+
+.nav-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.identity {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.identity dt {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6f8190;
+}
+
+.identity dd {
+  margin: 0.35rem 0 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.9rem 0.75rem;
+  border-bottom: 1px solid rgba(18, 36, 51, 0.12);
+}
+
+th {
+  color: #6f8190;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 1.25rem;
+  }
+
+  th,
+  td {
+    font-size: 0.9rem;
+  }
+}
