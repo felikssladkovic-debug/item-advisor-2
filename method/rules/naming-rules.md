@@ -1,7 +1,39 @@
-# naming-rules
+---
+id: rules.naming-rules
+title: Naming Rules
+type: rule
+status: draft
+version: 0.1
+links:
+  parent: method.index
+  children: []
+  related:
+    - rules.wiki-linking-rules
+---
 
-## Общие правила
-- Имена файлов: lowercase-kebab-case.
-- Markdown-файлы должны иметь один H1.
-- ID сущностей/фич/критериев должны быть стабильными.
-- Не переименовывать термины без обновления glossary и traceability.
+# Naming Rules
+
+## Purpose
+
+Keep names stable, readable, and script-checkable.
+
+## File Names
+
+Use lowercase kebab-case for files:
+
+```text
+human-llm-codex-roles.md
+```
+
+## Document IDs
+
+Use path-derived dot notation:
+
+```text
+rules.human-llm-codex-roles
+```
+
+## Links
+
+- Parent: [[method.index]]
+- Related: [[rules.wiki-linking-rules]]

@@ -1,11 +1,36 @@
-# layers-and-flow
+---
+id: rules.layers-and-flow
+title: Layers and Flow
+type: rule
+status: draft
+version: 0.1
+links:
+  parent: rules.workflow-overview
+  children: []
+  related:
+    - rules.traceability-policy
+---
 
-## Слои
-1. `ideas/` — сырые идеи, цели, сценарии, решения.
-2. `spec/` — нормализованное описание продукта и системы.
-3. `code/` или выбранная структура реализации — исходный код.
-4. `tests/` — проверка критериев приемки.
-5. `runtime` — фактическое поведение системы.
+# Layers and Flow
 
-## Поток
-Идея может быть свободной. Spec должен быть связным. Код должен быть трассируемым. Тесты должны проверять spec, а не случайные детали реализации.
+## Purpose
+
+Describe the conceptual layers used by the method.
+
+## Layers
+
+```text
+idea layer
+spec layer
+prompt layer
+code layer
+test/check layer
+runtime observation layer
+```
+
+A project can start with very thin layers, but it should not collapse all decisions directly into code.
+
+## Links
+
+- Parent: [[rules.workflow-overview]]
+- Related: [[rules.traceability-policy]]

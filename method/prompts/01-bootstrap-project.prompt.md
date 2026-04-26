@@ -1,40 +1,34 @@
-# 01-bootstrap-project.prompt
+---
+id: prompts.01-bootstrap-project.prompt
+title: Bootstrap Project Prompt
+type: prompt
+status: draft
+version: 0.1
+links:
+  parent: method.index
+  children: []
+  related:
+    - rules.workflow-overview
+    - rules.wiki-linking-rules
+---
 
-Ты работаешь в папке `project/`.
+# Bootstrap Project Prompt
 
-Это barebone-проект, созданный из `starting-foundation-01-barebone`. Твоя задача — не сразу писать код, а подготовить проект к первой осмысленной генерации кода с сохранением связности:
+## Purpose
 
-`business idea → ideas → spec → code → tests → runtime`.
+Use this prompt when Codex is launched inside the `project/` folder and should create the first real project files from method context.
 
-## Сначала прочитай
+## Prompt
 
-- `../README.md`
-- `../method/rules/README.md`
-- `../method/rules/*.md`
-- `ideas/*.md`
-- `spec/**/*.md`
-- `method.lock.json`
+```text
+You are working inside the project folder.
+Before generating code, read the method-wiki in ../method.
+Respect the workflow, traceability, naming, and review rules.
+Do not assume a stack unless the user explicitly provides it.
+When adding or editing Markdown under ../method, preserve YAML front matter, update links, and run the method-wiki validation scripts.
+```
 
-## Сделай
+## Links
 
-1. Проверь, что структура проекта корректна.
-2. Найди пустые/слишком общие места в `ideas/` и `spec/`.
-3. Составь список вопросов к человеку, без которых нельзя безопасно выбирать стек и генерировать код.
-4. Если данных достаточно, предложи минимальный вертикальный срез.
-5. Не создавай backend/frontend/database/auth/infra, если это явно не вытекает из заполненной спецификации.
-6. Не добавляй технологические решения только потому, что они типовые.
-
-## Формат ответа
-
-Верни отчет в Markdown:
-
-- `Structure check`
-- `Missing product decisions`
-- `Spec gaps`
-- `Suggested minimal vertical slice`
-- `Files I would create next`
-- `Questions for human`
-
-## Жесткое правило
-
-Любой предлагаемый файл кода должен иметь ссылку на конкретный spec/decision/acceptance criterion, из которого он следует.
+- Parent: [[method.index]]
+- Related: [[rules.workflow-overview]], [[rules.wiki-linking-rules]]

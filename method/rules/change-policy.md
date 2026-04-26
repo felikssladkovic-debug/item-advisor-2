@@ -1,15 +1,28 @@
-# change-policy
+---
+id: rules.change-policy
+title: Change Policy
+type: rule
+status: draft
+version: 0.1
+links:
+  parent: rules.workflow-overview
+  children: []
+  related:
+    - templates.change-request-template
+    - rules.traceability-policy
+---
 
-## Для новой функции
-1. Добавить/обновить idea или decision.
-2. Обновить product/domain/contracts/ui/infra spec — по необходимости.
-3. Добавить acceptance criteria.
-4. Сгенерировать/изменить код.
-5. Добавить тесты.
-6. Обновить traceability.
+# Change Policy
 
-## Для исправления бага
-1. Описать наблюдаемое поведение.
-2. Найти spec-ожидание или добавить его.
-3. Исправить код.
-4. Добавить регрессионный тест.
+## Purpose
+
+Define how changes enter the project without breaking method consistency.
+
+## Rule
+
+A meaningful change should be described before it is implemented. The description may be short, but it must state intent, affected areas, and verification approach.
+
+## Links
+
+- Parent: [[rules.workflow-overview]]
+- Related: [[templates.change-request-template]], [[rules.traceability-policy]]

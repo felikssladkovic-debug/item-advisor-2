@@ -1,30 +1,24 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_DIR="$ROOT_DIR/project"
-FOUNDATION_DIR="$ROOT_DIR/method/starting-foundation"
+TARGET_DIR="${1:-./project-workspace}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-mkdir -p "$PROJECT_DIR"
+mkdir -p "$TARGET_DIR"
+cp -R "$SCRIPT_DIR/method" "$TARGET_DIR/"
+mkdir -p "$TARGET_DIR/project"
 
-if [ -d "$PROJECT_DIR/ideas" ] || [ -d "$PROJECT_DIR/spec" ]; then
-  echo "ERROR: project/ideas or project/spec already exists."
-  echo "This script is intentionally non-destructive. Move or delete existing folders first."
-  exit 1
-fi
+cat <<EOF
+Created barebone workspace at: $TARGET_DIR
 
-cp -R "$FOUNDATION_DIR/ideas" "$PROJECT_DIR/ideas"
-cp -R "$FOUNDATION_DIR/spec" "$PROJECT_DIR/spec"
-cp "$ROOT_DIR/method.lock.json" "$PROJECT_DIR/method.lock.json"
+Next steps:
+  cd "$TARGET_DIR"
+  python method/tools/generate_graph.py --check
+  python method/tools/validate_method_wiki.py
 
-cat > "$PROJECT_DIR/README.md" <<'EOF'
-# project
+To start code generation, run Codex inside:
+  $TARGET_DIR/project
 
-Рабочая папка проекта.
-
-Сначала заполни `ideas/` и `spec/`. Код появляется только после того, как решение можно проследить от бизнес-идеи к спецификации.
+and use:
+  $TARGET_DIR/method/prompts/01-bootstrap-project.prompt.md
 EOF
-
-echo "OK: starting foundation copied into project/."
-echo "Next: cd project"
-echo "Then run Codex with: ../method/prompts/01-bootstrap-project.prompt.md"

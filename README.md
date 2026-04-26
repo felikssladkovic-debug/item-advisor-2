@@ -1,34 +1,22 @@
 # starting-foundation-01-barebone
 
-Barebone-пакет для разработки проекта по методике связности:
+Barebone starting package for projects developed with a method-wiki approach.
 
-**business idea → ideas → spec → code → tests → runtime → sync back to spec**.
+The package intentionally does not assume a website, admin panel, database, backend, frontend, or infrastructure stack.
 
-Эта версия намеренно не знает, какой именно продукт будет построен. Здесь нет предположений про сайт, админку, базу данных, backend, frontend, auth или инфраструктуру. Пакет задает только минимальную структуру, правила и стартовые файлы для любого проекта.
-
-## Что внутри
-
-- `method/starting-foundation/` — стартовый набор файлов, который копируется в `project/`.
-- `method/rules/` — правила работы с идеями, спецификацией, кодом и изменениями.
-- `method/templates/` — шаблоны для будущего расширения spec/ideas.
-- `method/prompts/01-bootstrap-project.prompt.md` — первый промпт для Codex после копирования стартовых файлов.
-- `method/tools/` — минимальные локальные проверки структуры и ссылок.
-- `project/` — рабочая папка будущего проекта. До запуска `start.sh` почти пустая.
-
-## Как стартовать
-
-```bash
-chmod +x start.sh
-./start.sh
-cd project
-```
-
-После этого запусти Codex именно из папки `project/` и передай ему промпт:
+## Structure
 
 ```text
-../method/prompts/01-bootstrap-project.prompt.md
+method/   # method-wiki: rules, templates, prompts, graph, validation tools
+project/  # target workspace; initially empty
+start.sh  # copies the starting workspace to a target folder
 ```
 
-## Важное ограничение barebone-версии
+## Method-wiki checks
 
-Codex не должен сразу генерировать произвольный backend/frontend/infra. Сначала он должен заполнить и согласовать файлы `ideas/` и `spec/`, затем предложить минимальный план генерации кода.
+```bash
+python method/tools/generate_graph.py
+python method/tools/validate_method_wiki.py
+```
+
+Every Markdown document in `method/` has YAML front matter, a path-derived id, and links to related method documents.

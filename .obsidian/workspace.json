@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "3acc6c6fa27717cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "85b05440676cc864",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19c7f8f2a36a8ebe",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Новая вкладка"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3caeb040fae7a90d",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4b35fda99ba4762",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b93e3c39a5ef18cb",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "af0e2d0c78791ea9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "475e59ec546d0803",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f7a2ca1c3c5eef16",
+    "type": "split",
+    "children": [
+      {
+        "id": "d4b122d60a0e87f8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "436b7b57b757ae3e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки"
+            }
+          },
+          {
+            "id": "85b984fb99e1860f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки"
+            }
+          },
+          {
+            "id": "765cde4d6c85a071",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "5163ded6c150b0f6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "e5855ed0ea707fdf",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false
+    }
+  },
+  "active": "19c7f8f2a36a8ebe",
+  "lastOpenFiles": [
+    "start.sh",
+    "README.md",
+    "method.lock.json",
+    "project",
+    "method/tools/README.md",
+    "method/tools/traceability_check.py",
+    "method/tools/spec_lint.py",
+    "method/tools/link_check.py",
+    "method/tools/orphan_check.py",
+    "method/tools/validate_method_wiki.py",
+    "method/tools/method_wiki_common.py",
+    "method/tools/generate_graph.py",
+    "method/tools",
+    "method/prompts/01-bootstrap-project.prompt.md",
+    "method/templates/spec-template.md",
+    "method/templates/change-request-template.md",
+    "method/templates/decision-log-template.md",
+    "method/templates/business-idea-template.md",
+    "method/rules/layers-and-flow.md",
+    "method/rules/consistency-policy.md",
+    "method/rules/project-version-binding.md",
+    "method/rules/naming-rules.md",
+    "method/rules/review-policy.md",
+    "method/rules/change-policy.md",
+    "method/rules/repository-model.md",
+    "method/rules/wiki-linking-rules.md",
+    "method/rules/traceability-policy.md",
+    "method/rules/human-llm-codex-roles.md",
+    "method/rules/workflow-overview.md",
+    "method/graph.md",
+    "method/index.md",
+    "method/templates/spec/70-workflow/sync-rules.template.md",
+    "method/templates/spec/70-workflow/definition-of-done.template.md",
+    "method/templates/spec/70-workflow/change-process.template.md",
+    "method/templates/spec/60-quality/traceability.template.md",
+    "method/templates/spec/60-quality/test-scenarios.template.md"
+  ]
+}

@@ -1,10 +1,32 @@
-# consistency-policy
+---
+id: rules.consistency-policy
+title: Consistency Policy
+type: rule
+status: draft
+version: 0.1
+links:
+  parent: method.index
+  children: []
+  related:
+    - rules.traceability-policy
+    - rules.review-policy
+---
 
-## Принцип
-Нельзя считать изменение завершенным, если оно существует только в коде или только в разговоре.
+# Consistency Policy
 
-## Проверять
-- Термины из кода есть в glossary или очевидны из spec.
-- Фича из кода есть в feature-map или decisions.
-- Тест проверяет acceptance criteria.
-- README не противоречит фактическому запуску.
+## Purpose
+
+Define what “consistent” means for this method.
+
+## Consistency Means
+
+- no orphan method documents;
+- no broken wiki links;
+- document ids match file paths;
+- generated graph is up to date;
+- specs and prompts do not contradict core method rules.
+
+## Links
+
+- Parent: [[method.index]]
+- Related: [[rules.traceability-policy]], [[rules.review-policy]]

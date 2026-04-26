@@ -1,12 +1,21 @@
-# tools
+---
+id: tools.README
+title: Method Tools README
+type: index
+status: draft
+version: 0.1
+links:
+  parent: method.index
+  children: []
+  related:
+    - rules.wiki-linking-rules
+---
 
-Минимальные проверки для barebone-пакета.
+# Method Tools
+
+Run from the package root:
 
 ```bash
-python3 method/tools/spec_lint.py project
-python3 method/tools/link_check.py project
-python3 method/tools/orphan_check.py project
-python3 method/tools/traceability_check.py project
+python method/tools/generate_graph.py
+python method/tools/validate_method_wiki.py
 ```
-
-Эти скрипты намеренно простые. Они не заменяют review, но помогают поймать грубые ошибки структуры.

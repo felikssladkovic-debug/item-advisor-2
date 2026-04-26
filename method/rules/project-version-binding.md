@@ -1,8 +1,33 @@
-# project-version-binding
+---
+id: rules.project-version-binding
+title: Project Version Binding
+type: rule
+status: draft
+version: 0.1
+links:
+  parent: method.index
+  children: []
+  related:
+    - rules.traceability-policy
+---
 
-`method.lock.json` фиксирует, каким методическим пакетом был инициализирован проект.
+# Project Version Binding
 
-При обновлении методики:
-1. Не перетирать project/spec автоматически.
-2. Делать миграцию отдельным изменением.
-3. Фиксировать, какие правила были обновлены.
+## Purpose
+
+Record which method assumptions were used to create or change the project.
+
+## Rule
+
+A project state should be reproducible from:
+
+```text
+method version + prompt + project files + recorded decisions
+```
+
+The barebone package includes `method.lock.json` as the minimal place for method package metadata.
+
+## Links
+
+- Parent: [[method.index]]
+- Related: [[rules.traceability-policy]]
