@@ -7,6 +7,7 @@ version: 0.1
 links:
   parent: 
   children:
+    - starting-foundation.index
     - rules.workflow-overview
     - rules.wiki-linking-rules
     - rules.naming-rules
@@ -23,6 +24,14 @@ links:
 # Method Index
 
 This folder is a small **method-wiki**. It describes how to keep business intent, specifications, implementation, and project evolution connected.
+
+## Starting Foundation
+
+- [[starting-foundation.index]] — pre-created project-neutral scaffold that Codex must fill, not invent from scratch.
+- [[starting-foundation.ideas.index]] — place for first idea documents.
+- [[starting-foundation.spec.index]] — place for first specification documents.
+- [[starting-foundation.decisions.index]] — place for early decision records.
+- [[starting-foundation.change-requests.index]] — place for planned deltas.
 
 ## Core Rules
 

@@ -31,11 +31,17 @@ graph TD
   rules_traceability_policy["rules.traceability-policy<br/>Traceability Policy"]
   rules_wiki_linking_rules["rules.wiki-linking-rules<br/>Wiki Linking Rules"]
   rules_workflow_overview["rules.workflow-overview<br/>Workflow Overview"]
+  starting_foundation_change_requests_index["starting-foundation.change-requests.index<br/>Starting Foundation / Change Requests"]
+  starting_foundation_decisions_index["starting-foundation.decisions.index<br/>Starting Foundation / Decisions"]
+  starting_foundation_ideas_index["starting-foundation.ideas.index<br/>Starting Foundation / Ideas"]
+  starting_foundation_index["starting-foundation.index<br/>Starting Foundation"]
+  starting_foundation_spec_index["starting-foundation.spec.index<br/>Starting Foundation / Spec"]
   templates_business_idea_template["templates.business-idea-template<br/>Business Idea Template"]
   templates_change_request_template["templates.change-request-template<br/>Change Request Template"]
   templates_decision_log_template["templates.decision-log-template<br/>Decision Log Template"]
   templates_spec_template["templates.spec-template<br/>Specification Template"]
 
+  method_index --> starting_foundation_index
   method_index --> rules_workflow_overview
   method_index --> rules_wiki_linking_rules
   method_index --> rules_naming_rules
@@ -82,6 +88,29 @@ graph TD
   rules_workflow_overview --> rules_review_policy
   rules_workflow_overview --> rules_layers_and_flow
   rules_workflow_overview -. related .-> rules_repository_model
+  starting_foundation_index --> starting_foundation_change_requests_index
+  starting_foundation_change_requests_index -. related .-> templates_change_request_template
+  starting_foundation_change_requests_index -. related .-> rules_change_policy
+  starting_foundation_change_requests_index -. related .-> rules_project_version_binding
+  starting_foundation_index --> starting_foundation_decisions_index
+  starting_foundation_decisions_index -. related .-> templates_decision_log_template
+  starting_foundation_decisions_index -. related .-> rules_change_policy
+  starting_foundation_decisions_index -. related .-> rules_review_policy
+  starting_foundation_index --> starting_foundation_ideas_index
+  starting_foundation_ideas_index -. related .-> templates_business_idea_template
+  starting_foundation_ideas_index -. related .-> rules_traceability_policy
+  method_index --> starting_foundation_index
+  starting_foundation_index --> starting_foundation_ideas_index
+  starting_foundation_index --> starting_foundation_spec_index
+  starting_foundation_index --> starting_foundation_decisions_index
+  starting_foundation_index --> starting_foundation_change_requests_index
+  starting_foundation_index -. related .-> rules_workflow_overview
+  starting_foundation_index -. related .-> rules_repository_model
+  starting_foundation_index -. related .-> prompts_01_bootstrap_project_prompt
+  starting_foundation_index --> starting_foundation_spec_index
+  starting_foundation_spec_index -. related .-> templates_spec_template
+  starting_foundation_spec_index -. related .-> rules_traceability_policy
+  starting_foundation_spec_index -. related .-> rules_consistency_policy
   method_index --> templates_business_idea_template
   templates_business_idea_template -. related .-> templates_spec_template
   method_index --> templates_change_request_template
