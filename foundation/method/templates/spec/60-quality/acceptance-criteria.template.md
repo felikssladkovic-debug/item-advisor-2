@@ -1,1 +1,0 @@
-# acceptance-criteria.template.md

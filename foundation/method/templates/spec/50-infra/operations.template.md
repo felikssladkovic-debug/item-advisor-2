@@ -1,1 +1,0 @@
-# operations.template.md

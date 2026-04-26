@@ -1,1 +1,0 @@
-# sync-rules.md

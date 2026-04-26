@@ -1,1 +1,0 @@
-# non-goals.md

@@ -1,1 +1,0 @@
-# spec-review.template.md

@@ -1,1 +1,0 @@
-# capabilities.template.md

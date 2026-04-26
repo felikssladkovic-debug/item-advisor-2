@@ -1,0 +1,6 @@
+{
+  "method_package": "starting-foundation-01-barebone",
+  "method_version": "0.1.0",
+  "purpose": "generic barebone foundation; no product-specific stack assumptions",
+  "generated_code_allowed": false
+}

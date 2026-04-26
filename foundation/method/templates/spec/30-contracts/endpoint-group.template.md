@@ -1,1 +1,0 @@
-# endpoint-group.template.md

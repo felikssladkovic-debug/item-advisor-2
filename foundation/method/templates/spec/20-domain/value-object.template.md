@@ -1,1 +1,0 @@
-# value-object.template.md
