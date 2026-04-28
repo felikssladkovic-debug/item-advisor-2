@@ -1,0 +1,13 @@
+# Codex workspace note
+
+Preferred working directory: `project/`.
+
+Before generating code, read:
+
+1. `../README.md`
+2. `../method/rules/README.md`
+3. `ideas/`
+4. `spec/`
+5. `../method/prompts/01-bootstrap-project.prompt.md`
+
+Do not create implementation files until the minimal spec is coherent enough to trace every generated file back to a product/spec decision.

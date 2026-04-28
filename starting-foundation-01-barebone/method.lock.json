@@ -1,0 +1,8 @@
+{
+  "package": "starting-foundation-01-barebone",
+  "version": "0.2",
+  "method_model": "method-wiki",
+  "id_rule": "method-relative path without .md, slash replaced by dot",
+  "generated_graph": "method/graph.md",
+  "validation": "python method/tools/validate_method_wiki.py"
+}
