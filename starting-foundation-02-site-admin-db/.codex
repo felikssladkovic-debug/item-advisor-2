@@ -1,0 +1,18 @@
+# Codex workspace note
+
+Preferred working directory: `project/` after running `./start.sh`.
+
+Before generating code, read:
+
+1. `../README.md`
+2. `../method/index.md`
+3. `../method/rules/`
+4. `ideas/`
+5. `decisions/`
+6. `spec/`
+7. `checks/acceptance-checklist.md`
+8. `prompts/01-generate-code-from-spec.prompt.md`
+
+Generate implementation code only from the accepted spec.
+Do not create functionality listed as out of scope or non-goals.
+Every generated file must be traceable to the spec.
