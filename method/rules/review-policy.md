@@ -8,7 +8,7 @@ links:
   parent: rules.workflow-overview
   children: []
   related:
-    - rules.human-llm-codex-roles
+    - rules.roles
     - rules.traceability-policy
 ---
 
@@ -16,7 +16,7 @@ links:
 
 ## Purpose
 
-Define what should be checked after LLM/Codex changes.
+Define what should be checked after LLM-2 changes.
 
 ## Minimum Review
 
@@ -28,7 +28,3 @@ Check that:
 4. method-wiki links and graph remain valid;
 5. tests or manual checks are described.
 
-## Links
-
-- Parent: [[rules.workflow-overview]]
-- Related: [[rules.human-llm-codex-roles]], [[rules.traceability-policy]]

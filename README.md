@@ -12,8 +12,8 @@ starting-foundation-<nn>-<name>/  # versions of project evolution stable states 
 ## Method-wiki checks
 
 ```bash
-python method/tools/generate\_graph.py
-python method/tools/validate\_method\_wiki.py
+python method/tools/generate_graph.py
+python method/tools/validate_method_wiki.py
 ```
 
 Every Markdown document in `method/` has YAML front matter, a path-derived id, and links to related method documents.

@@ -27,7 +27,3 @@ method version + prompt + project files + recorded decisions
 
 The barebone package includes `method.lock.json` as the minimal place for method package metadata.
 
-## Links
-
-- Parent: [[method.index]]
-- Related: [[rules.traceability-policy]]

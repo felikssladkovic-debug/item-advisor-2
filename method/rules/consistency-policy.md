@@ -25,8 +25,3 @@ Define what “consistent” means for this method.
 - document ids match file paths;
 - generated graph is up to date;
 - specs and prompts do not contradict core method rules.
-
-## Links
-
-- Parent: [[method.index]]
-- Related: [[rules.traceability-policy]], [[rules.review-policy]]

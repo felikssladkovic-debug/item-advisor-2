@@ -16,7 +16,7 @@ links:
 
 ## Purpose
 
-Use this prompt when Codex is launched inside the `project/` folder and should create the first real project files from method context.
+Use this prompt when LLM-2 is launched inside the `project/` folder and should create the first real project files from method context.
 
 ## Prompt
 
