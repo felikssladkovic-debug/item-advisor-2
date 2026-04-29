@@ -39,3 +39,8 @@ This decision must be represented in:
 
 - `spec/02-applications.md`;
 - `spec/05-acceptance-criteria.md`.
+
+## Links
+
+- Parent: [[starting-foundation.ideas.accepted.index]]
+- Related: [[starting-foundation.spec.02-applications]]

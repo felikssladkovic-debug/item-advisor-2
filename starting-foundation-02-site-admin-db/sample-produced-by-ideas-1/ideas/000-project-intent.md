@@ -52,3 +52,8 @@ The following folders are not authoritative for spec generation:
 
 - `ideas/inbox/*`;
 - `ideas/archive/*`.
+
+## Links
+
+- Parent: [[starting-foundation.ideas.index]]
+- Related: [[starting-foundation.spec.00-overview]], [[starting-foundation.spec.01-architecture]]

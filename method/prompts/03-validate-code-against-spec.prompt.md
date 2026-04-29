@@ -1,16 +1,15 @@
 ---
-id: starting-foundation.prompts.03-validate-code-against-spec.prompt
+id: prompts.03-validate-code-against-spec.prompt
 title: Validate Code Against Spec Prompt
 type: prompt
 status: accepted
 version: 0.2
 links:
-  parent: starting-foundation.prompts.index
+  parent: prompts.index
   children: []
   related:
-    - rules.project-lifecycle
-    - rules.ideas-to-spec-mapping
-    - starting-foundation.spec.index
+    - rules.workflow-overview
+    - rules.spec-to-code-mapping
 ---
 
 # Validate Code Against Spec Prompt
@@ -58,8 +57,3 @@ If useful undocumented behavior is found, propose whether to:
 
 Promotion is never automatic.
 ```
-
-## Links
-
-- Parent: [[starting-foundation.prompts.index]]
-- Related: [[rules.project-lifecycle]], [[rules.ideas-to-spec-mapping]], [[starting-foundation.spec.index]]

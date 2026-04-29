@@ -30,3 +30,8 @@ This decision must be represented in:
 - `spec/01-architecture.md`;
 - `spec/03-database.md`;
 - `spec/05-acceptance-criteria.md`.
+
+## Links
+
+- Parent: [[starting-foundation.ideas.accepted.index]]
+- Related: [[starting-foundation.spec.03-database]]

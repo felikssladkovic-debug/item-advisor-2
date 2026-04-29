@@ -36,3 +36,8 @@ These files are authoritative for spec generation.
 - Numbers are stable reading-order identifiers.
 - Do not renumber accepted files after creation.
 - Do not edit accepted decisions without explicit review.
+
+## Links
+
+- Parent: [[starting-foundation.ideas.index]]
+- Related: [[rules.ideas-to-spec-mapping]]

@@ -34,3 +34,8 @@ This decision must be represented in:
 - `spec/01-architecture.md`;
 - `spec/04-runtime-modes.md`;
 - `spec/05-acceptance-criteria.md`.
+
+## Links
+
+- Parent: [[starting-foundation.ideas.accepted.index]]
+- Related: [[starting-foundation.spec.01-architecture]]

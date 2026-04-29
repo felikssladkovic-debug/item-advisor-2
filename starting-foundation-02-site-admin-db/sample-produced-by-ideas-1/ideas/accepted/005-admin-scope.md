@@ -30,3 +30,8 @@ This decision must be represented in:
 
 - `spec/02-applications.md`;
 - `spec/06-non-goals.md`.
+
+## Links
+
+- Parent: [[starting-foundation.ideas.accepted.index]]
+- Related: [[starting-foundation.spec.02-applications]], [[starting-foundation.spec.06-non-goals]]

@@ -50,3 +50,8 @@ The following are not authoritative for spec generation:
 3. If accepted, create or update a file in `ideas/accepted/` or `ideas/boundaries/`.
 4. Move the original inbox file to `ideas/archive/`.
 5. Update spec only from authoritative idea-layer sources.
+
+## Links
+
+- Parent: [[starting-foundation.index]]
+- Related: [[templates.business-idea-template]], [[rules.traceability-policy]], [[rules.ideas-to-spec-mapping]]

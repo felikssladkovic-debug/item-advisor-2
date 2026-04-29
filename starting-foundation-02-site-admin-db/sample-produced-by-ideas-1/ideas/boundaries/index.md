@@ -26,3 +26,8 @@ These files are authoritative for spec generation.
 
 - Boundaries protect the project from scope creep.
 - Codex must not implement behavior listed here unless the boundary is changed and approved first.
+
+## Links
+
+- Parent: [[starting-foundation.ideas.index]]
+- Related: [[rules.ideas-to-spec-mapping]]

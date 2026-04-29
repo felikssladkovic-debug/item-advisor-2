@@ -22,3 +22,8 @@ Files here are historical context, not source of truth for spec generation.
 - Do not delete archived ideas unless the human explicitly requests cleanup.
 - Do not use archive files as authoritative input for spec generation.
 - Use this folder together with `ideas/inbox/` to determine the next inbox sequence number.
+
+## Links
+
+- Parent: [[starting-foundation.ideas.index]]
+- Related: [[rules.ideas-to-spec-mapping]]

@@ -42,8 +42,8 @@ The `id` must match the relative path inside `/method` without `.md`, with `/` r
 Example:
 
 ```text
-method/rules/human-llm-codex-roles.md
-→ rules.human-llm-codex-roles
+method/rules/workflow-overview.md
+→ rules.workflow-overview
 ```
 
 ## Link Rule
@@ -53,8 +53,3 @@ Every document except `method.index` must have at least one incoming link and mu
 ## Graph Rule
 
 `method/graph.md` is generated from YAML front matter by `method/tools/generate_graph.py`.
-
-## Links
-
-- Parent: [[method.index]]
-- Related: [[method.graph]]

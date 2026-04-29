@@ -1,17 +1,15 @@
 ---
-id: starting-foundation.prompts.01-generate-code-from-spec.prompt
+id: prompts.01-generate-spec-from-ideas.prompt
 title: Generate Code From Spec Prompt
 type: prompt
 status: accepted
 version: 0.2
 links:
-  parent: starting-foundation.prompts.index
+  parent: prompts.index
   children: []
   related:
-    - rules.project-lifecycle
+    - rules.workflow-overview
     - rules.ideas-to-spec-mapping
-    - starting-foundation.spec.index
-    - starting-foundation.checks.acceptance-checklist
 ---
 
 # Generate Code From Spec Prompt
@@ -76,8 +74,3 @@ After generation, report:
 - any assumptions
 - any acceptance criteria not yet satisfied
 ```
-
-## Links
-
-- Parent: [[starting-foundation.prompts.index]]
-- Related: [[rules.project-lifecycle]], [[rules.ideas-to-spec-mapping]], [[starting-foundation.spec.index]], [[starting-foundation.checks.acceptance-checklist]]

@@ -34,3 +34,8 @@ This boundary must be represented in:
 
 - `spec/06-non-goals.md`;
 - `spec/05-acceptance-criteria.md` where relevant as anti-scope checks.
+
+## Links
+
+- Parent: [[starting-foundation.ideas.boundaries.index]]
+- Related: [[starting-foundation.spec.06-non-goals]]

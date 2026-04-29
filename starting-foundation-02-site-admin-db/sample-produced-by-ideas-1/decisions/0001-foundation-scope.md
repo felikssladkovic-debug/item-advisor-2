@@ -1,6 +1,6 @@
 ---
 id: starting-foundation.decisions.0001-foundation-scope
-title: Foundation Scope: Site, Admin, Shared Database
+title: Foundation Scope Site, Admin, Shared Database
 type: decision
 status: accepted
 version: 0.1

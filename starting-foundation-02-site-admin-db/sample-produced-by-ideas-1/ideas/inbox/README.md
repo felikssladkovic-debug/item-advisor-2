@@ -24,3 +24,8 @@ Files here are not authoritative for spec generation.
 - Do not use this folder as a source of truth for spec generation.
 - After an idea is accepted, create or update the corresponding file in `ideas/accepted/` or `ideas/boundaries/`.
 - Move the original inbox file to `ideas/archive/` after processing.
+
+## Links
+
+- Parent: [[starting-foundation.ideas.index]]
+- Related: [[rules.ideas-to-spec-mapping]]

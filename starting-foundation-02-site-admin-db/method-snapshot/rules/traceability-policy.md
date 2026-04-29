@@ -34,7 +34,3 @@ why → what → how → where → how verified
 - **where**: files, modules, APIs, or data structures affected;
 - **how verified**: manual check, test, lint, or runtime observation.
 
-## Links
-
-- Parent: [[rules.workflow-overview]]
-- Related: [[rules.consistency-policy]], [[templates.spec-template]], [[templates.decision-log-template]]

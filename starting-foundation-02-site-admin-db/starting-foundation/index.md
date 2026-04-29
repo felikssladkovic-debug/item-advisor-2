@@ -45,4 +45,4 @@ It intentionally does not define real business functionality yet.
 
 ## Rule
 
-Codex may generate implementation code from this scaffold, but must not add behavior that is absent from the spec or explicitly marked as out of scope. Inbox and archive ideas are not source of truth for code generation.
+LLM-2 may generate implementation code from this scaffold, but must not add behavior that is absent from the spec or explicitly marked as out of scope. Inbox and archive ideas are not source of truth for code generation.

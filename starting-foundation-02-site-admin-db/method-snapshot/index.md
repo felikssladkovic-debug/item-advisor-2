@@ -7,9 +7,7 @@ version: 0.3
 links:
   parent: 
   children:
-    - starting-foundation.index
     - rules.workflow-overview
-    - rules.project-lifecycle
     - rules.ideas-to-spec-mapping
     - rules.wiki-linking-rules
     - rules.naming-rules
@@ -27,31 +25,18 @@ links:
 
 This folder is a small **method-wiki**. It describes how to keep business intent, specifications, implementation, checks, runtime behavior, and project evolution connected.
 
-## Starting Foundation
-
-- [[starting-foundation.index]] — pre-created site/admin/database scaffold that Codex must use, not invent from scratch.
-- [[starting-foundation.ideas.index]] — idea layer with project intent, accepted ideas, boundaries, inbox, and archive.
-- [[starting-foundation.spec.index]] — initial specification documents.
-- [[starting-foundation.decisions.index]] — early decision records.
-- [[starting-foundation.change-requests.index]] — planned deltas.
-- [[starting-foundation.prompts.index]] — project-level prompts copied into the project workspace.
-- [[starting-foundation.checks.index]] — acceptance checks copied into the project workspace.
-
 ## Core Rules
 
 - [[rules.workflow-overview]] — the end-to-end workflow for changing a project through text, specs, checks, and code.
-- [[rules.project-lifecycle]] — lifecycle operations from project initialization to method propagation.
 - [[rules.ideas-to-spec-mapping]] — contract for deriving spec from accepted ideas and boundaries.
-- [[rules.human-llm-codex-roles]] — division of responsibility between human, LLM, and Codex.
+- [[rules.roles]] — division of responsibility between human, LLM-1, and LLM-2.
 - [[rules.traceability-policy]] — how business idea, spec, code, tests, and decisions stay linked.
 - [[rules.wiki-linking-rules]] — rules for metadata, links, graph generation, and orphan prevention.
 - [[rules.naming-rules]] — naming conventions for files, ids, and documents.
 - [[rules.project-version-binding]] — how project state and method state are bound together.
-- [[rules.repository-model]] — minimal repository layout and expected folders.
 - [[rules.change-policy]] — how changes are proposed and applied.
 - [[rules.review-policy]] — how changes are reviewed before they become part of the project.
 - [[rules.consistency-policy]] — what consistency means in this method.
-- [[rules.layers-and-flow]] — layered flow from idea to runtime.
 
 ## Templates
 
@@ -62,7 +47,7 @@ This folder is a small **method-wiki**. It describes how to keep business intent
 
 ## Prompts
 
-- [[prompts.01-bootstrap-project.prompt]] — initial prompt for Codex.
+- [[prompts.01-bootstrap-project.prompt]] — initial prompt for LLM-2.
 
 ## Generated Map
 

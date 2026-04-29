@@ -9,7 +9,6 @@ links:
   children: []
   related:
     - rules.workflow-overview
-    - rules.project-lifecycle
     - rules.traceability-policy
     - rules.consistency-policy
 ---
@@ -196,7 +195,3 @@ It must also report:
 - potential conflicts;
 - any spec statements that do not trace back to accepted ideas or boundaries.
 
-## Links
-
-- Parent: [[method.index]]
-- Related: [[rules.workflow-overview]], [[rules.project-lifecycle]], [[rules.traceability-policy]], [[rules.consistency-policy]]

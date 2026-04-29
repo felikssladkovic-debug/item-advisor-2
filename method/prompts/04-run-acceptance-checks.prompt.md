@@ -1,15 +1,14 @@
 ---
-id: starting-foundation.prompts.04-run-acceptance-checks.prompt
+id: prompts.04-run-acceptance-checks.prompt
 title: Run Acceptance Checks Prompt
 type: prompt
 status: accepted
 version: 0.1
 links:
-  parent: starting-foundation.prompts.index
+  parent: prompts.index
   children: []
   related:
-    - rules.project-lifecycle
-    - starting-foundation.checks.acceptance-checklist
+    - rules.workflow-mappings
 ---
 
 # Run Acceptance Checks Prompt
@@ -43,8 +42,3 @@ Report:
 
 Code is not deployable until acceptance checks pass.
 ```
-
-## Links
-
-- Parent: [[starting-foundation.prompts.index]]
-- Related: [[rules.project-lifecycle]], [[starting-foundation.checks.acceptance-checklist]]

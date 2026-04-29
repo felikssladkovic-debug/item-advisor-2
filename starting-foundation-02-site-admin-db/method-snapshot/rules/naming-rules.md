@@ -22,7 +22,7 @@ Keep names stable, readable, and script-checkable.
 Use lowercase kebab-case for files:
 
 ```text
-human-llm-codex-roles.md
+workflow-overview.md
 ```
 
 ## Document IDs
@@ -30,10 +30,5 @@ human-llm-codex-roles.md
 Use path-derived dot notation:
 
 ```text
-rules.human-llm-codex-roles
+rules.workflow-overview
 ```
-
-## Links
-
-- Parent: [[method.index]]
-- Related: [[rules.wiki-linking-rules]]
