@@ -3,12 +3,14 @@ id: starting-foundation.spec.02-applications
 title: Applications
 type: spec
 status: accepted
-version: 0.1
+version: 0.2
 links:
   parent: starting-foundation.spec.index
   children: []
   related:
-    - starting-foundation.ideas.01-accepted-decisions
+    - starting-foundation.ideas.accepted.003-site-behavior
+    - starting-foundation.ideas.accepted.004-admin-behavior
+    - starting-foundation.ideas.accepted.005-admin-scope
     - starting-foundation.spec.01-architecture
     - starting-foundation.spec.05-acceptance-criteria
 ---
@@ -84,4 +86,4 @@ Expected logical response:
 ## Links
 
 - Parent: [[starting-foundation.spec.index]]
-- Related: [[starting-foundation.ideas.01-accepted-decisions]], [[starting-foundation.spec.01-architecture]], [[starting-foundation.spec.05-acceptance-criteria]]
+- Related: [[starting-foundation.ideas.accepted.003-site-behavior]], [[starting-foundation.ideas.accepted.004-admin-behavior]], [[starting-foundation.ideas.accepted.005-admin-scope]], [[starting-foundation.spec.01-architecture]], [[starting-foundation.spec.05-acceptance-criteria]]

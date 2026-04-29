@@ -32,6 +32,22 @@ Use:
 prompts/01-generate-code-from-spec.prompt.md
 ```
 
+
+## Ideas layer
+
+The initialized project uses this idea-layer structure:
+
+```text
+ideas/
+  000-project-intent.md
+  accepted/    # approved idea-layer decisions, source of truth for spec
+  boundaries/  # explicit non-goals and constraints
+  inbox/       # raw ideas under discussion, not authoritative
+  archive/     # processed inbox ideas, not authoritative
+```
+
+Spec generation must use only `000-project-intent.md`, `accepted/`, and `boundaries/`.
+
 ## Method-wiki checks
 
 ```bash

@@ -1,9 +1,9 @@
 ---
-id: starting-foundation.ideas.00-project-intent
+id: starting-foundation.ideas.000-project-intent
 title: Project Intent
 type: idea
 status: accepted
-version: 0.1
+version: 0.2
 links:
   parent: starting-foundation.ideas.index
   children: []
@@ -39,6 +39,19 @@ The generated project is successful when:
 - the system can be started in development mode;
 - the system can be started in production mode;
 - acceptance checks pass.
+
+## Authoritative idea sources
+
+For spec generation, the authoritative idea-layer sources are:
+
+- this file;
+- `ideas/accepted/*`;
+- `ideas/boundaries/*`.
+
+The following folders are not authoritative for spec generation:
+
+- `ideas/inbox/*`;
+- `ideas/archive/*`.
 
 ## Links
 

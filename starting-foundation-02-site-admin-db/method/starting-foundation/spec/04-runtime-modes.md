@@ -3,7 +3,7 @@ id: starting-foundation.spec.04-runtime-modes
 title: Runtime Modes
 type: spec
 status: accepted
-version: 0.1
+version: 0.2
 links:
   parent: starting-foundation.spec.index
   children: []

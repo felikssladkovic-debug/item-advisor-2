@@ -3,13 +3,13 @@ id: starting-foundation.spec.01-architecture
 title: Architecture
 type: spec
 status: accepted
-version: 0.1
+version: 0.2
 links:
   parent: starting-foundation.spec.index
   children: []
   related:
-    - starting-foundation.ideas.00-project-intent
-    - starting-foundation.ideas.01-accepted-decisions
+    - starting-foundation.ideas.000-project-intent
+    - starting-foundation.ideas.accepted.001-application-shape
     - starting-foundation.decisions.0001-foundation-scope
     - starting-foundation.spec.02-applications
     - starting-foundation.spec.03-database
@@ -64,4 +64,4 @@ admin-frontend -> admin-backend -> database
 ## Links
 
 - Parent: [[starting-foundation.spec.index]]
-- Related: [[starting-foundation.ideas.00-project-intent]], [[starting-foundation.ideas.01-accepted-decisions]], [[starting-foundation.decisions.0001-foundation-scope]], [[starting-foundation.spec.02-applications]], [[starting-foundation.spec.03-database]]
+- Related: [[starting-foundation.ideas.000-project-intent]], [[starting-foundation.ideas.accepted.001-application-shape]], [[starting-foundation.decisions.0001-foundation-scope]], [[starting-foundation.spec.02-applications]], [[starting-foundation.spec.03-database]]

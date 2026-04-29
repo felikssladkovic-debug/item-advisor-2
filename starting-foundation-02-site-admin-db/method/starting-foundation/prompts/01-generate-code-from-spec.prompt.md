@@ -3,12 +3,13 @@ id: starting-foundation.prompts.01-generate-code-from-spec.prompt
 title: Generate Code From Spec Prompt
 type: prompt
 status: accepted
-version: 0.1
+version: 0.2
 links:
   parent: starting-foundation.prompts.index
   children: []
   related:
     - rules.project-lifecycle
+    - rules.ideas-to-spec-mapping
     - starting-foundation.spec.index
     - starting-foundation.checks.acceptance-checklist
 ---
@@ -20,19 +21,35 @@ links:
 ```text
 You are working inside the project folder.
 
-Read all files in:
+Read the method rules:
 
 - ../method/rules/
-- ideas/
-- decisions/
+
+Read authoritative idea-layer sources:
+
+- ideas/000-project-intent.md
+- ideas/accepted/
+- ideas/boundaries/
+
+Do NOT use these folders as source of truth for implementation:
+
+- ideas/inbox/
+- ideas/archive/
+
+Read implementation specifications and checks:
+
 - spec/
 - checks/
+
+Before generating code, validate that spec fully covers the authoritative idea-layer sources according to ../method/rules/ideas-to-spec-mapping.md.
+
+If spec does not cover accepted ideas or boundaries, stop and report missing mappings instead of generating code.
 
 Generate the application code strictly according to spec.
 
 Do not invent business features.
 
-Do not implement functionality listed in non-goals or out-of-scope documents.
+Do not implement functionality listed in non-goals, boundaries, or out-of-scope documents.
 
 The result must include:
 
@@ -55,6 +72,7 @@ After generation, report:
 - generated structure
 - startup commands
 - test/check commands
+- idea-to-spec coverage summary
 - any assumptions
 - any acceptance criteria not yet satisfied
 ```
@@ -62,4 +80,4 @@ After generation, report:
 ## Links
 
 - Parent: [[starting-foundation.prompts.index]]
-- Related: [[rules.project-lifecycle]], [[starting-foundation.spec.index]], [[starting-foundation.checks.acceptance-checklist]]
+- Related: [[rules.project-lifecycle]], [[rules.ideas-to-spec-mapping]], [[starting-foundation.spec.index]], [[starting-foundation.checks.acceptance-checklist]]

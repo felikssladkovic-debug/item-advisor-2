@@ -3,12 +3,13 @@ id: rules.workflow-overview
 title: Workflow Overview
 type: rule
 status: draft
-version: 0.2
+version: 0.3
 links:
   parent: method.index
   children:
     - rules.project-lifecycle
     - rules.human-llm-codex-roles
+    - rules.ideas-to-spec-mapping
     - rules.traceability-policy
     - rules.change-policy
     - rules.review-policy
@@ -31,7 +32,7 @@ ideas → spec → code → tests/checks → runtime behavior → next change
 ## Workflow Loop
 
 1. Capture the business idea in a short human-readable form.
-2. Convert the idea into explicit specifications.
+2. Convert accepted ideas and boundaries into explicit specifications according to [[rules.ideas-to-spec-mapping]].
 3. Ask Codex to generate or modify code only from the agreed specification context.
 4. Review the generated changes against the specification and method rules.
 5. Run acceptance checks before treating code as deployable.
@@ -45,5 +46,5 @@ The detailed lifecycle operations are defined in [[rules.project-lifecycle]].
 ## Links
 
 - Parent: [[method.index]]
-- Children: [[rules.project-lifecycle]], [[rules.human-llm-codex-roles]], [[rules.traceability-policy]], [[rules.change-policy]], [[rules.review-policy]], [[rules.layers-and-flow]]
+- Children: [[rules.project-lifecycle]], [[rules.human-llm-codex-roles]], [[rules.ideas-to-spec-mapping]], [[rules.traceability-policy]], [[rules.change-policy]], [[rules.review-policy]], [[rules.layers-and-flow]]
 - Related: [[rules.repository-model]]

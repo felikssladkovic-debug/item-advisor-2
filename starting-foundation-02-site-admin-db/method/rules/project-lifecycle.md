@@ -3,13 +3,14 @@ id: rules.project-lifecycle
 title: Project Lifecycle
 type: rule
 status: draft
-version: 0.1
+version: 0.2
 links:
   parent: rules.workflow-overview
   children: []
   related:
     - rules.layers-and-flow
     - rules.human-llm-codex-roles
+    - rules.ideas-to-spec-mapping
     - rules.traceability-policy
     - rules.change-policy
     - rules.review-policy
@@ -107,11 +108,11 @@ The LLM must:
 
 A human adds a new idea, decision, constraint, or product intention.
 
-Ideas should follow the existing ideas format used in the project.
+New ideas are created in `ideas/inbox/`. Inbox ideas are not authoritative for spec generation. After review, accepted content is moved into `ideas/accepted/` or `ideas/boundaries/`, and the original inbox file is moved to `ideas/archive/`.
 
 ### E. Refine idea into spec
 
-LLM converts an approved idea into a draft spec change.
+LLM converts approved idea-layer sources into a draft spec change according to [[rules.ideas-to-spec-mapping]].
 
 The LLM may ask clarifying questions.
 

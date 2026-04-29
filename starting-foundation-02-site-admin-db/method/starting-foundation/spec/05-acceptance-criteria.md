@@ -3,11 +3,12 @@ id: starting-foundation.spec.05-acceptance-criteria
 title: Acceptance Criteria
 type: spec
 status: accepted
-version: 0.1
+version: 0.2
 links:
   parent: starting-foundation.spec.index
   children: []
   related:
+    - starting-foundation.ideas.boundaries.001-out-of-scope
     - starting-foundation.spec.02-applications
     - starting-foundation.spec.03-database
     - starting-foundation.spec.04-runtime-modes

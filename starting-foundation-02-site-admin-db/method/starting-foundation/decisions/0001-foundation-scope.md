@@ -8,7 +8,7 @@ links:
   parent: starting-foundation.decisions.index
   children: []
   related:
-    - starting-foundation.ideas.01-accepted-decisions
+    - starting-foundation.ideas.accepted.001-application-shape
     - starting-foundation.spec.01-architecture
 ---
 
@@ -41,4 +41,4 @@ Acceptance checks must verify both frontend/backend pairs and shared database av
 ## Links
 
 - Parent: [[starting-foundation.decisions.index]]
-- Related: [[starting-foundation.ideas.01-accepted-decisions]], [[starting-foundation.spec.01-architecture]]
+- Related: [[starting-foundation.ideas.accepted.001-application-shape]], [[starting-foundation.spec.01-architecture]]

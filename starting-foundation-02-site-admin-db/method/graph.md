@@ -23,6 +23,7 @@ graph TD
   rules_change_policy["rules.change-policy<br/>Change Policy"]
   rules_consistency_policy["rules.consistency-policy<br/>Consistency Policy"]
   rules_human_llm_codex_roles["rules.human-llm-codex-roles<br/>Human / LLM / Codex Roles"]
+  rules_ideas_to_spec_mapping["rules.ideas-to-spec-mapping<br/>Ideas to Spec Mapping Contract"]
   rules_layers_and_flow["rules.layers-and-flow<br/>Layers and Flow"]
   rules_naming_rules["rules.naming-rules<br/>Naming Rules"]
   rules_project_lifecycle["rules.project-lifecycle<br/>Project Lifecycle"]
@@ -37,9 +38,17 @@ graph TD
   starting_foundation_checks_index["starting-foundation.checks.index<br/>Starting Foundation / Checks"]
   starting_foundation_decisions_0001_foundation_scope["starting-foundation.decisions.0001-foundation-scope<br/>Foundation Scope: Site, Admin, Shared Database"]
   starting_foundation_decisions_index["starting-foundation.decisions.index<br/>Starting Foundation / Decisions"]
-  starting_foundation_ideas_00_project_intent["starting-foundation.ideas.00-project-intent<br/>Project Intent"]
-  starting_foundation_ideas_01_accepted_decisions["starting-foundation.ideas.01-accepted-decisions<br/>Accepted Decisions"]
-  starting_foundation_ideas_02_out_of_scope["starting-foundation.ideas.02-out-of-scope<br/>Out of Scope"]
+  starting_foundation_ideas_000_project_intent["starting-foundation.ideas.000-project-intent<br/>Project Intent"]
+  starting_foundation_ideas_accepted_001_application_shape["starting-foundation.ideas.accepted.001-application-shape<br/>Application Shape"]
+  starting_foundation_ideas_accepted_002_database["starting-foundation.ideas.accepted.002-database<br/>Shared Database"]
+  starting_foundation_ideas_accepted_003_site_behavior["starting-foundation.ideas.accepted.003-site-behavior<br/>Site Behavior"]
+  starting_foundation_ideas_accepted_004_admin_behavior["starting-foundation.ideas.accepted.004-admin-behavior<br/>Admin Behavior"]
+  starting_foundation_ideas_accepted_005_admin_scope["starting-foundation.ideas.accepted.005-admin-scope<br/>Admin Scope"]
+  starting_foundation_ideas_accepted_index["starting-foundation.ideas.accepted.index<br/>Accepted Ideas Index"]
+  starting_foundation_ideas_archive_README["starting-foundation.ideas.archive.README<br/>Ideas Archive"]
+  starting_foundation_ideas_boundaries_001_out_of_scope["starting-foundation.ideas.boundaries.001-out-of-scope<br/>Out of Scope"]
+  starting_foundation_ideas_boundaries_index["starting-foundation.ideas.boundaries.index<br/>Boundaries Index"]
+  starting_foundation_ideas_inbox_README["starting-foundation.ideas.inbox.README<br/>Ideas Inbox"]
   starting_foundation_ideas_index["starting-foundation.ideas.index<br/>Starting Foundation / Ideas"]
   starting_foundation_index["starting-foundation.index<br/>Starting Foundation / Site Admin DB"]
   starting_foundation_prompts_01_generate_code_from_spec_prompt["starting-foundation.prompts.01-generate-code-from-spec.prompt<br/>Generate Code From Spec Prompt"]
@@ -63,6 +72,7 @@ graph TD
   method_index --> starting_foundation_index
   method_index --> rules_workflow_overview
   method_index --> rules_project_lifecycle
+  method_index --> rules_ideas_to_spec_mapping
   method_index --> rules_wiki_linking_rules
   method_index --> rules_naming_rules
   method_index --> rules_project_version_binding
@@ -85,6 +95,11 @@ graph TD
   rules_human_llm_codex_roles -. related .-> rules_project_lifecycle
   rules_human_llm_codex_roles -. related .-> rules_traceability_policy
   rules_human_llm_codex_roles -. related .-> rules_review_policy
+  method_index --> rules_ideas_to_spec_mapping
+  rules_ideas_to_spec_mapping -. related .-> rules_workflow_overview
+  rules_ideas_to_spec_mapping -. related .-> rules_project_lifecycle
+  rules_ideas_to_spec_mapping -. related .-> rules_traceability_policy
+  rules_ideas_to_spec_mapping -. related .-> rules_consistency_policy
   rules_workflow_overview --> rules_layers_and_flow
   rules_layers_and_flow -. related .-> rules_traceability_policy
   method_index --> rules_naming_rules
@@ -92,6 +107,7 @@ graph TD
   rules_workflow_overview --> rules_project_lifecycle
   rules_project_lifecycle -. related .-> rules_layers_and_flow
   rules_project_lifecycle -. related .-> rules_human_llm_codex_roles
+  rules_project_lifecycle -. related .-> rules_ideas_to_spec_mapping
   rules_project_lifecycle -. related .-> rules_traceability_policy
   rules_project_lifecycle -. related .-> rules_change_policy
   rules_project_lifecycle -. related .-> rules_review_policy
@@ -111,6 +127,7 @@ graph TD
   method_index --> rules_workflow_overview
   rules_workflow_overview --> rules_project_lifecycle
   rules_workflow_overview --> rules_human_llm_codex_roles
+  rules_workflow_overview --> rules_ideas_to_spec_mapping
   rules_workflow_overview --> rules_traceability_policy
   rules_workflow_overview --> rules_change_policy
   rules_workflow_overview --> rules_review_policy
@@ -128,29 +145,52 @@ graph TD
   starting_foundation_checks_index -. related .-> rules_project_lifecycle
   starting_foundation_checks_index -. related .-> starting_foundation_spec_05_acceptance_criteria
   starting_foundation_decisions_index --> starting_foundation_decisions_0001_foundation_scope
-  starting_foundation_decisions_0001_foundation_scope -. related .-> starting_foundation_ideas_01_accepted_decisions
+  starting_foundation_decisions_0001_foundation_scope -. related .-> starting_foundation_ideas_accepted_001_application_shape
   starting_foundation_decisions_0001_foundation_scope -. related .-> starting_foundation_spec_01_architecture
   starting_foundation_index --> starting_foundation_decisions_index
   starting_foundation_decisions_index --> starting_foundation_decisions_0001_foundation_scope
   starting_foundation_decisions_index -. related .-> templates_decision_log_template
   starting_foundation_decisions_index -. related .-> rules_change_policy
   starting_foundation_decisions_index -. related .-> rules_review_policy
-  starting_foundation_ideas_index --> starting_foundation_ideas_00_project_intent
-  starting_foundation_ideas_00_project_intent -. related .-> starting_foundation_spec_00_overview
-  starting_foundation_ideas_00_project_intent -. related .-> starting_foundation_spec_01_architecture
-  starting_foundation_ideas_index --> starting_foundation_ideas_01_accepted_decisions
-  starting_foundation_ideas_01_accepted_decisions -. related .-> starting_foundation_decisions_0001_foundation_scope
-  starting_foundation_ideas_01_accepted_decisions -. related .-> starting_foundation_spec_01_architecture
-  starting_foundation_ideas_01_accepted_decisions -. related .-> starting_foundation_spec_02_applications
-  starting_foundation_ideas_01_accepted_decisions -. related .-> starting_foundation_spec_03_database
-  starting_foundation_ideas_index --> starting_foundation_ideas_02_out_of_scope
-  starting_foundation_ideas_02_out_of_scope -. related .-> starting_foundation_spec_06_non_goals
+  starting_foundation_ideas_index --> starting_foundation_ideas_000_project_intent
+  starting_foundation_ideas_000_project_intent -. related .-> starting_foundation_spec_00_overview
+  starting_foundation_ideas_000_project_intent -. related .-> starting_foundation_spec_01_architecture
+  starting_foundation_ideas_accepted_index --> starting_foundation_ideas_accepted_001_application_shape
+  starting_foundation_ideas_accepted_001_application_shape -. related .-> starting_foundation_spec_01_architecture
+  starting_foundation_ideas_accepted_index --> starting_foundation_ideas_accepted_002_database
+  starting_foundation_ideas_accepted_002_database -. related .-> starting_foundation_spec_03_database
+  starting_foundation_ideas_accepted_index --> starting_foundation_ideas_accepted_003_site_behavior
+  starting_foundation_ideas_accepted_003_site_behavior -. related .-> starting_foundation_spec_02_applications
+  starting_foundation_ideas_accepted_index --> starting_foundation_ideas_accepted_004_admin_behavior
+  starting_foundation_ideas_accepted_004_admin_behavior -. related .-> starting_foundation_spec_02_applications
+  starting_foundation_ideas_accepted_index --> starting_foundation_ideas_accepted_005_admin_scope
+  starting_foundation_ideas_accepted_005_admin_scope -. related .-> starting_foundation_spec_02_applications
+  starting_foundation_ideas_accepted_005_admin_scope -. related .-> starting_foundation_spec_06_non_goals
+  starting_foundation_ideas_index --> starting_foundation_ideas_accepted_index
+  starting_foundation_ideas_accepted_index --> starting_foundation_ideas_accepted_001_application_shape
+  starting_foundation_ideas_accepted_index --> starting_foundation_ideas_accepted_002_database
+  starting_foundation_ideas_accepted_index --> starting_foundation_ideas_accepted_003_site_behavior
+  starting_foundation_ideas_accepted_index --> starting_foundation_ideas_accepted_004_admin_behavior
+  starting_foundation_ideas_accepted_index --> starting_foundation_ideas_accepted_005_admin_scope
+  starting_foundation_ideas_accepted_index -. related .-> rules_ideas_to_spec_mapping
+  starting_foundation_ideas_index --> starting_foundation_ideas_archive_README
+  starting_foundation_ideas_archive_README -. related .-> rules_ideas_to_spec_mapping
+  starting_foundation_ideas_boundaries_index --> starting_foundation_ideas_boundaries_001_out_of_scope
+  starting_foundation_ideas_boundaries_001_out_of_scope -. related .-> starting_foundation_spec_06_non_goals
+  starting_foundation_ideas_index --> starting_foundation_ideas_boundaries_index
+  starting_foundation_ideas_boundaries_index --> starting_foundation_ideas_boundaries_001_out_of_scope
+  starting_foundation_ideas_boundaries_index -. related .-> rules_ideas_to_spec_mapping
+  starting_foundation_ideas_index --> starting_foundation_ideas_inbox_README
+  starting_foundation_ideas_inbox_README -. related .-> rules_ideas_to_spec_mapping
   starting_foundation_index --> starting_foundation_ideas_index
-  starting_foundation_ideas_index --> starting_foundation_ideas_00_project_intent
-  starting_foundation_ideas_index --> starting_foundation_ideas_01_accepted_decisions
-  starting_foundation_ideas_index --> starting_foundation_ideas_02_out_of_scope
+  starting_foundation_ideas_index --> starting_foundation_ideas_000_project_intent
+  starting_foundation_ideas_index --> starting_foundation_ideas_accepted_index
+  starting_foundation_ideas_index --> starting_foundation_ideas_boundaries_index
+  starting_foundation_ideas_index --> starting_foundation_ideas_inbox_README
+  starting_foundation_ideas_index --> starting_foundation_ideas_archive_README
   starting_foundation_ideas_index -. related .-> templates_business_idea_template
   starting_foundation_ideas_index -. related .-> rules_traceability_policy
+  starting_foundation_ideas_index -. related .-> rules_ideas_to_spec_mapping
   method_index --> starting_foundation_index
   starting_foundation_index --> starting_foundation_ideas_index
   starting_foundation_index --> starting_foundation_spec_index
@@ -164,14 +204,16 @@ graph TD
   starting_foundation_index -. related .-> prompts_01_bootstrap_project_prompt
   starting_foundation_prompts_index --> starting_foundation_prompts_01_generate_code_from_spec_prompt
   starting_foundation_prompts_01_generate_code_from_spec_prompt -. related .-> rules_project_lifecycle
+  starting_foundation_prompts_01_generate_code_from_spec_prompt -. related .-> rules_ideas_to_spec_mapping
   starting_foundation_prompts_01_generate_code_from_spec_prompt -. related .-> starting_foundation_spec_index
   starting_foundation_prompts_01_generate_code_from_spec_prompt -. related .-> starting_foundation_checks_acceptance_checklist
   starting_foundation_prompts_index --> starting_foundation_prompts_02_incremental_code_update_prompt
   starting_foundation_prompts_02_incremental_code_update_prompt -. related .-> rules_project_lifecycle
-  starting_foundation_prompts_02_incremental_code_update_prompt -. related .-> rules_change_policy
+  starting_foundation_prompts_02_incremental_code_update_prompt -. related .-> rules_ideas_to_spec_mapping
+  starting_foundation_prompts_02_incremental_code_update_prompt -. related .-> starting_foundation_spec_index
   starting_foundation_prompts_index --> starting_foundation_prompts_03_validate_code_against_spec_prompt
   starting_foundation_prompts_03_validate_code_against_spec_prompt -. related .-> rules_project_lifecycle
-  starting_foundation_prompts_03_validate_code_against_spec_prompt -. related .-> rules_traceability_policy
+  starting_foundation_prompts_03_validate_code_against_spec_prompt -. related .-> rules_ideas_to_spec_mapping
   starting_foundation_prompts_03_validate_code_against_spec_prompt -. related .-> starting_foundation_spec_index
   starting_foundation_prompts_index --> starting_foundation_prompts_04_run_acceptance_checks_prompt
   starting_foundation_prompts_04_run_acceptance_checks_prompt -. related .-> rules_project_lifecycle
@@ -182,32 +224,36 @@ graph TD
   starting_foundation_prompts_index --> starting_foundation_prompts_03_validate_code_against_spec_prompt
   starting_foundation_prompts_index --> starting_foundation_prompts_04_run_acceptance_checks_prompt
   starting_foundation_prompts_index -. related .-> rules_project_lifecycle
+  starting_foundation_prompts_index -. related .-> rules_ideas_to_spec_mapping
   starting_foundation_spec_index --> starting_foundation_spec_00_overview
-  starting_foundation_spec_00_overview -. related .-> starting_foundation_ideas_00_project_intent
+  starting_foundation_spec_00_overview -. related .-> starting_foundation_ideas_000_project_intent
   starting_foundation_spec_00_overview -. related .-> starting_foundation_spec_01_architecture
   starting_foundation_spec_index --> starting_foundation_spec_01_architecture
-  starting_foundation_spec_01_architecture -. related .-> starting_foundation_ideas_00_project_intent
-  starting_foundation_spec_01_architecture -. related .-> starting_foundation_ideas_01_accepted_decisions
+  starting_foundation_spec_01_architecture -. related .-> starting_foundation_ideas_000_project_intent
+  starting_foundation_spec_01_architecture -. related .-> starting_foundation_ideas_accepted_001_application_shape
   starting_foundation_spec_01_architecture -. related .-> starting_foundation_decisions_0001_foundation_scope
   starting_foundation_spec_01_architecture -. related .-> starting_foundation_spec_02_applications
   starting_foundation_spec_01_architecture -. related .-> starting_foundation_spec_03_database
   starting_foundation_spec_index --> starting_foundation_spec_02_applications
-  starting_foundation_spec_02_applications -. related .-> starting_foundation_ideas_01_accepted_decisions
+  starting_foundation_spec_02_applications -. related .-> starting_foundation_ideas_accepted_003_site_behavior
+  starting_foundation_spec_02_applications -. related .-> starting_foundation_ideas_accepted_004_admin_behavior
+  starting_foundation_spec_02_applications -. related .-> starting_foundation_ideas_accepted_005_admin_scope
   starting_foundation_spec_02_applications -. related .-> starting_foundation_spec_01_architecture
   starting_foundation_spec_02_applications -. related .-> starting_foundation_spec_05_acceptance_criteria
   starting_foundation_spec_index --> starting_foundation_spec_03_database
-  starting_foundation_spec_03_database -. related .-> starting_foundation_ideas_01_accepted_decisions
+  starting_foundation_spec_03_database -. related .-> starting_foundation_ideas_accepted_002_database
   starting_foundation_spec_03_database -. related .-> starting_foundation_spec_01_architecture
   starting_foundation_spec_03_database -. related .-> starting_foundation_spec_05_acceptance_criteria
   starting_foundation_spec_index --> starting_foundation_spec_04_runtime_modes
   starting_foundation_spec_04_runtime_modes -. related .-> starting_foundation_spec_05_acceptance_criteria
   starting_foundation_spec_index --> starting_foundation_spec_05_acceptance_criteria
+  starting_foundation_spec_05_acceptance_criteria -. related .-> starting_foundation_ideas_boundaries_001_out_of_scope
   starting_foundation_spec_05_acceptance_criteria -. related .-> starting_foundation_spec_02_applications
   starting_foundation_spec_05_acceptance_criteria -. related .-> starting_foundation_spec_03_database
   starting_foundation_spec_05_acceptance_criteria -. related .-> starting_foundation_spec_04_runtime_modes
   starting_foundation_spec_05_acceptance_criteria -. related .-> starting_foundation_checks_acceptance_checklist
   starting_foundation_spec_index --> starting_foundation_spec_06_non_goals
-  starting_foundation_spec_06_non_goals -. related .-> starting_foundation_ideas_02_out_of_scope
+  starting_foundation_spec_06_non_goals -. related .-> starting_foundation_ideas_boundaries_001_out_of_scope
   starting_foundation_index --> starting_foundation_spec_index
   starting_foundation_spec_index --> starting_foundation_spec_00_overview
   starting_foundation_spec_index --> starting_foundation_spec_01_architecture

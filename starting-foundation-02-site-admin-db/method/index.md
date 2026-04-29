@@ -3,13 +3,14 @@ id: method.index
 title: Method Index
 type: index
 status: draft
-version: 0.2
+version: 0.3
 links:
   parent: 
   children:
     - starting-foundation.index
     - rules.workflow-overview
     - rules.project-lifecycle
+    - rules.ideas-to-spec-mapping
     - rules.wiki-linking-rules
     - rules.naming-rules
     - rules.project-version-binding
@@ -29,7 +30,7 @@ This folder is a small **method-wiki**. It describes how to keep business intent
 ## Starting Foundation
 
 - [[starting-foundation.index]] — pre-created site/admin/database scaffold that Codex must use, not invent from scratch.
-- [[starting-foundation.ideas.index]] — initial idea documents.
+- [[starting-foundation.ideas.index]] — idea layer with project intent, accepted ideas, boundaries, inbox, and archive.
 - [[starting-foundation.spec.index]] — initial specification documents.
 - [[starting-foundation.decisions.index]] — early decision records.
 - [[starting-foundation.change-requests.index]] — planned deltas.
@@ -40,6 +41,7 @@ This folder is a small **method-wiki**. It describes how to keep business intent
 
 - [[rules.workflow-overview]] — the end-to-end workflow for changing a project through text, specs, checks, and code.
 - [[rules.project-lifecycle]] — lifecycle operations from project initialization to method propagation.
+- [[rules.ideas-to-spec-mapping]] — contract for deriving spec from accepted ideas and boundaries.
 - [[rules.human-llm-codex-roles]] — division of responsibility between human, LLM, and Codex.
 - [[rules.traceability-policy]] — how business idea, spec, code, tests, and decisions stay linked.
 - [[rules.wiki-linking-rules]] — rules for metadata, links, graph generation, and orphan prevention.
