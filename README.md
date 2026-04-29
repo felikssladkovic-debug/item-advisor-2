@@ -1,22 +1,24 @@
-# starting-foundation-01-barebone
+# method-wiki-eng-prog
 
-Barebone starting package for projects developed with a method-wiki approach.
-
-The package intentionally does not assume a website, admin panel, database, backend, frontend, or infrastructure stack.
+This method define evolution process for any applicable project by method-wiki-eng-prog (which implements paradigm of programming in english).
 
 ## Structure
 
 ```text
 method/   # method-wiki: rules, templates, prompts, graph, validation tools
-project/  # target workspace; initially empty
-start.sh  # copies the starting workspace to a target folder
+starting-foundation-<nn>-<name>/  # versions of project evolution stable states (i.e. ideas with reflected spec)
 ```
 
 ## Method-wiki checks
 
 ```bash
-python method/tools/generate_graph.py
-python method/tools/validate_method_wiki.py
+python method/tools/generate\_graph.py
+python method/tools/validate\_method\_wiki.py
 ```
 
 Every Markdown document in `method/` has YAML front matter, a path-derived id, and links to related method documents.
+
+## How to start new project
+Choose foundation close to your project intention (see starting-foundation-<nn>-<name> folders), and run its start.sh
+
+

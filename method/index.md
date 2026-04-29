@@ -3,12 +3,14 @@ id: method.index
 title: Method Index
 type: index
 status: draft
-version: 0.1
+version: 0.3
 links:
   parent: 
   children:
     - starting-foundation.index
     - rules.workflow-overview
+    - rules.project-lifecycle
+    - rules.ideas-to-spec-mapping
     - rules.wiki-linking-rules
     - rules.naming-rules
     - rules.project-version-binding
@@ -23,19 +25,23 @@ links:
 
 # Method Index
 
-This folder is a small **method-wiki**. It describes how to keep business intent, specifications, implementation, and project evolution connected.
+This folder is a small **method-wiki**. It describes how to keep business intent, specifications, implementation, checks, runtime behavior, and project evolution connected.
 
 ## Starting Foundation
 
-- [[starting-foundation.index]] — pre-created project-neutral scaffold that Codex must fill, not invent from scratch.
-- [[starting-foundation.ideas.index]] — place for first idea documents.
-- [[starting-foundation.spec.index]] — place for first specification documents.
-- [[starting-foundation.decisions.index]] — place for early decision records.
-- [[starting-foundation.change-requests.index]] — place for planned deltas.
+- [[starting-foundation.index]] — pre-created site/admin/database scaffold that Codex must use, not invent from scratch.
+- [[starting-foundation.ideas.index]] — idea layer with project intent, accepted ideas, boundaries, inbox, and archive.
+- [[starting-foundation.spec.index]] — initial specification documents.
+- [[starting-foundation.decisions.index]] — early decision records.
+- [[starting-foundation.change-requests.index]] — planned deltas.
+- [[starting-foundation.prompts.index]] — project-level prompts copied into the project workspace.
+- [[starting-foundation.checks.index]] — acceptance checks copied into the project workspace.
 
 ## Core Rules
 
-- [[rules.workflow-overview]] — the end-to-end workflow for changing a project through text, specs, and code.
+- [[rules.workflow-overview]] — the end-to-end workflow for changing a project through text, specs, checks, and code.
+- [[rules.project-lifecycle]] — lifecycle operations from project initialization to method propagation.
+- [[rules.ideas-to-spec-mapping]] — contract for deriving spec from accepted ideas and boundaries.
 - [[rules.human-llm-codex-roles]] — division of responsibility between human, LLM, and Codex.
 - [[rules.traceability-policy]] — how business idea, spec, code, tests, and decisions stay linked.
 - [[rules.wiki-linking-rules]] — rules for metadata, links, graph generation, and orphan prevention.
@@ -44,8 +50,6 @@ This folder is a small **method-wiki**. It describes how to keep business intent
 - [[rules.repository-model]] — minimal repository layout and expected folders.
 - [[rules.change-policy]] — how changes are proposed and applied.
 - [[rules.review-policy]] — how changes are reviewed before they become part of the project.
-- [[rules.naming-rules]] — naming conventions for files, ids, and documents.
-- [[rules.project-version-binding]] — how project state and method state are bound together.
 - [[rules.consistency-policy]] — what consistency means in this method.
 - [[rules.layers-and-flow]] — layered flow from idea to runtime.
 
