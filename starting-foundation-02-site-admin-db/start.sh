@@ -6,9 +6,9 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 mkdir -p "$TARGET_DIR"
 rm -rf "$TARGET_DIR/method"
-cp -R "$SCRIPT_DIR/method" "$TARGET_DIR/"
+cp -R "$SCRIPT_DIR/../method" "$TARGET_DIR/"
 mkdir -p "$TARGET_DIR/project"
-cp -R "$SCRIPT_DIR/method/starting-foundation/." "$TARGET_DIR/project/"
+cp -R "$SCRIPT_DIR/starting-foundation/." "$TARGET_DIR/project/"
 
 cat <<EOF
 Created site-admin-db workspace at: $TARGET_DIR
@@ -26,5 +26,6 @@ To start code generation, run Codex inside:
   $TARGET_DIR/project
 
 and use:
-  prompts/01-generate-code-from-spec.prompt.md
+  prompts/01-generate-spec-from-code.prompt.md
+  prompts/02-generate-code-from-spec.prompt.md
 EOF
